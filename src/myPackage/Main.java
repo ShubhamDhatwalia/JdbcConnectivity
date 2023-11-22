@@ -13,9 +13,11 @@ public class Main {
 		
 //		st.createData();
 		
-//    	st.readData();
+    	st.readData();
 		
-		st.updateData();
+//		st.updateData();
+		
+//		st.deleteData();
 	}
 
 }

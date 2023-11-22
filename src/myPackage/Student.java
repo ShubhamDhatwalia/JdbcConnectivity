@@ -142,4 +142,28 @@ public class Student {
 		
 	}
 
+	public void deleteData() {
+		
+		try {
+			String url = "jdbc:mysql://localhost:3306/db";
+			String userName = "root";
+			String password = "Shubham?2001";
+			
+			Connection conn = DriverManager.getConnection(url, userName, password);
+			
+			Statement stm = conn.createStatement();
+			
+			String query = "delete from student where RollNO =2";
+			
+			stm.execute(query);
+			
+			System.out.println("deleted successfully");
+			
+			conn.close();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
 }
